@@ -80,10 +80,11 @@
 
   # FIXME: Add the rest of your current configuration
   programs.zsh = {
-	  enable = true;
-	  shellAliases = {
-	        nrs = "sudo nixos-rebuild switch --flake /etc/nixos#onyx";
+      enable = true;
+      shellAliases = {
+        nrs = "sudo nixos-rebuild switch --flake /etc/nixos#onyx";
 		hms = "home-manager switch --flake /etc/nixos#zrd@onyx ";
+		ncc = "sudo rm -rf /etc/nixos && sudo cp -r ~/nixos /etc/nixos";
 	  };
   };
 
