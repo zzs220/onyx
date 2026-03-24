@@ -14,15 +14,21 @@
     sessionVariables = {
       XDG_CURRENT_DESKTOP = "Hyprland";
       XDG_SESSION_TYPE = "wayland";
-      XCURSOR_SIZE = "24";
-      XCURSOR_THEME = "Adwaita";
     };
   };
 
   security.polkit.enable = true;
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
+    ];
+  };
+
   environment.systemPackages = with pkgs; [
-  	thunar waybar wofi wl-clipboard brightnessctl
+  	waybar wofi wl-clipboard brightnessctl
+    thunar thunar-volman 
 	noctalia-shell noctalia-qs
   ];
 }
