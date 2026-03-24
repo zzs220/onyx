@@ -23,15 +23,15 @@
     ./hardware-configuration.nix
 
     # Import display and login managers
-    ./display/default.nix
-    ./login/default.nix
+    ../modules/nixos/display/default.nix
+    ../modules/nixos/login/default.nix
 
-    ./programs/default.nix
-    ./network/default.nix
-    ./boot/default.nix
-    ./audio/default.nix
-    ./hardware/default.nix
-    ./keyd/default.nix
+    ../modules/nixos/programs/default.nix
+    ../modules/nixos/network/default.nix
+    ../modules/nixos/boot/default.nix
+    ../modules/nixos/audio/default.nix
+    ../modules/nixos/hardware/default.nix
+    ../modules/nixos/keyd/default.nix
   ];
 
   nixpkgs = {
@@ -84,7 +84,7 @@
       shellAliases = {
         nrs = "sudo nixos-rebuild switch --flake /etc/nixos#onyx";
 		hms = "home-manager switch --flake /etc/nixos#zrd@onyx ";
-		ncc = "sudo rm -rf /etc/nixos && sudo cp -r ~/nixos /etc/nixos";
+		ncc = "sudo rm -rf /etc/nixos/* && sudo cp -r ~/nixos/* /etc/nixos/ && sudo rm -rf /etc/nixos/.git";
 	  };
   };
 

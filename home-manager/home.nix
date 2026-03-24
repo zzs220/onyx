@@ -17,7 +17,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    ./programs/tr.nix
+    ../modules/home-manager/tr.nix
   ];
 
   nixpkgs = {
