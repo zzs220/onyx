@@ -1,19 +1,9 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    # Core utilities
-    zsh
+    # Terminal
     ghostty
     kitty
-    wget
-    curl
-    git
-    neovim
-    htop
-    eza
-    bat
-    fzf
-    ripgrep
 
     # Development
     gcc
@@ -31,7 +21,7 @@
     # Browsers
     firefox
 
-    # Browsers
+    # 
     opencode
   ];
   fonts.packages = with pkgs; [

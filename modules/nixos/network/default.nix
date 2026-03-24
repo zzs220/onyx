@@ -13,4 +13,12 @@
   environment.systemPackages = with pkgs; [
 	  wireguard-tools wgcf
   ];
+
+  services.openssh = {
+    enable = true;
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = false;
+    };
+  };
 }

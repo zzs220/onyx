@@ -32,6 +32,7 @@
     ../modules/nixos/audio/default.nix
     ../modules/nixos/hardware/default.nix
     ../modules/nixos/keyd/default.nix
+    ../modules/nixos/utils.nix
   ];
 
   nixpkgs = {
