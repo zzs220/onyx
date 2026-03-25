@@ -4,6 +4,7 @@
     services = {
         upower.enable = true;
         udisks2.enable = true;
+        gvfs.enable = true;
     };
     documentation = {
         enable = true;
@@ -15,6 +16,6 @@
     };
   environment.systemPackages = with pkgs; [
     bash zsh wget curl git neovim htop eza bat fzf ripgrep
-    acpi
+    acpi zip unzip
   ];
 }

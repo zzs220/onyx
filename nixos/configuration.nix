@@ -86,6 +86,7 @@
         nrs = "sudo nixos-rebuild switch --flake /etc/nixos#onyx";
 		hms = "home-manager switch --flake /etc/nixos#zrd@onyx ";
 		ncc = "sudo rm -rf /etc/nixos/* && sudo cp -r ~/nixos/* /etc/nixos/ && sudo rm -rf /etc/nixos/.git";
+		nsc = "nix-search";
 	  };
   };
 
@@ -105,7 +106,7 @@
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
       # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["wheel" "networkmanager" "audio" "video" "bluetooth"];
+      extraGroups = ["wheel" "networkmanager" "audio" "video" "bluetooth" "storage"];
     };
   };
 
