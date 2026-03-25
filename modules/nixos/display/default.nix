@@ -1,10 +1,6 @@
 { pkgs, ... }:
 
 {
-  services.xserver = {
-    enable = true;
-  };
-
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -27,8 +23,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-  	waybar wofi wl-clipboard brightnessctl
-    thunar thunar-volman 
-	noctalia-shell noctalia-qs
+  	waybar wofi wl-clipboard brightnessctl hyprpolkitagent
+	noctalia-shell noctalia-qs nwg-look qt6Packages.qt6ct
+    nautilus
   ];
 }
