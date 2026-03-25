@@ -14,6 +14,7 @@
 
     # Tools
     fastfetch
+    nix-search-cli
 
     # Media
     mpv
@@ -21,10 +22,7 @@
     # Browsers
     firefox
 
-    # 
+    # AI
     opencode
   ];
-  fonts.packages = with pkgs; [
-	  nerd-fonts.iosevka
-];
 }

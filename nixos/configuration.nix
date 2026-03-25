@@ -33,6 +33,7 @@
     ../modules/nixos/hardware/default.nix
     ../modules/nixos/keyd/default.nix
     ../modules/nixos/utils.nix
+    ../modules/nixos/fonts.nix
   ];
 
   nixpkgs = {
