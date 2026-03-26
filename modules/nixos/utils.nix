@@ -15,6 +15,7 @@
         nixos.enable = false;
     };
   environment.systemPackages = with pkgs; [
+    home-manager
     bash zsh tmux wget curl git neovim btop eza bat fzf ripgrep
     acpi zip unzip
     btrfs-progs
