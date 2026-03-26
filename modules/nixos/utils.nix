@@ -15,7 +15,8 @@
         nixos.enable = false;
     };
   environment.systemPackages = with pkgs; [
-    bash zsh wget curl git neovim htop eza bat fzf ripgrep
+    bash zsh tmux wget curl git neovim btop eza bat fzf ripgrep
     acpi zip unzip
+    btrfs-progs
   ];
 }
