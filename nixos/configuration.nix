@@ -34,6 +34,7 @@
     ../modules/nixos/keyd/default.nix
     ../modules/nixos/utils.nix
     ../modules/nixos/fonts.nix
+    ../modules/nixos/games.nix
   ];
 
   nixpkgs = {
