@@ -19,6 +19,7 @@
     # ./nvim.nix
     ../modules/home-manager/tr.nix
     ../modules/home-manager/spicetify.nix
+    ../modules/home-manager/zen-browser.nix
   ];
 
   nixpkgs = {
@@ -67,7 +68,7 @@
   systemd.user.startServices = "sd-switch";
 
 # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.05";
+  home.stateVersion = "25.11";
   home.activation.cloneDotfiles = lib.hm.dag.entryAfter ["writeBoundary"] ''
   set -x
   echo "=== CLONE DOTFILES STEP ==="

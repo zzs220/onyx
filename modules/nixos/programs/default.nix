@@ -13,7 +13,7 @@
     mpv
 
     # Browsers
-    firefox
+    # firefox
 
     # AI
     opencode
