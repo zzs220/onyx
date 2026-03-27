@@ -24,7 +24,6 @@
     ../modules/nixos/display/default.nix
     ../modules/nixos/login/default.nix
 
-    ../modules/nixos/programs/default.nix
     ../modules/nixos/network/default.nix
     ../modules/nixos/boot/default.nix
     ../modules/nixos/audio/default.nix
@@ -35,6 +34,7 @@
     ../modules/nixos/programs/default.nix
     ../modules/nixos/programs/games.nix
     ../modules/nixos/programs/dev.nix
+    ../modules/nixos/programs/opencode.nix
     ../modules/nixos/tlp.nix
   ];
 
@@ -81,5 +81,6 @@
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
-  system.stateVersion = "23.05";
+  system.stateVersion = "25.11";
+
 }
