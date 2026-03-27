@@ -5,13 +5,6 @@
     ghostty
     kitty
 
-    # Development
-    gcc
-    # go
-    # nodejs
-    # python311
-    # python311Packages.pip
-
     # Tools
     fastfetch
     nix-search-cli
