@@ -28,6 +28,6 @@
     noctalia-shell noctalia-qs
     nwg-look adw-gtk3 papirus-icon-theme kdePackages.qt6ct
     kdePackages.kde-gtk-config
-    thunar thunar-archive-plugin
+    thunar xarchiver
   ];
 }
