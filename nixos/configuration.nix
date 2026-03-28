@@ -34,8 +34,8 @@
     ../modules/nixos/programs/default.nix
     ../modules/nixos/programs/games.nix
     ../modules/nixos/programs/dev.nix
-    ../modules/nixos/programs/opencode.nix
     ../modules/nixos/tlp.nix
+    ../modules/nixos/fixes.nix
   ];
 
   nixpkgs = {
