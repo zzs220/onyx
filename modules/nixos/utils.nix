@@ -42,7 +42,7 @@
   environment.systemPackages = with pkgs; [
     home-manager
       bash bash-completion zsh zsh-completions tmux wget curl git neovim btop eza bat fzf fd ripgrep jq
-      acpi zip unzip p7zip
+      acpi zip unzip p7zip unrar
       btrfs-progs
       sqlite tree-sitter
   ];
