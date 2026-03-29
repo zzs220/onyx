@@ -2,6 +2,7 @@
 {
   pkgs,
   config,
+  lib,
   inputs,
   ...
 }: let
@@ -11,8 +12,8 @@ in {
 
   programs.spicetify = {
     enable = true;
-    # theme = lib.mkForce spicePkgs.themes.dribbblish;
-    # colorScheme = "custom";
+    theme = lib.mkForce spicePkgs.themes.sleek;
+    colorScheme = "Greener";
     enabledExtensions = with spicePkgs.extensions; [
       # adblockify
       # playlistIcons
