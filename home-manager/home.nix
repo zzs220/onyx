@@ -18,6 +18,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     ../modules/home-manager/tr.nix
+    ../modules/home-manager/utils.nix
     ../modules/home-manager/spicetify.nix
     ../modules/home-manager/zen-browser.nix
   ];
@@ -51,14 +52,6 @@
     username = "zrd";
     homeDirectory = "/home/zrd";
   };
-
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  home.packages = with pkgs; [
-  stow
-  git 
-  tealdeer
-  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
