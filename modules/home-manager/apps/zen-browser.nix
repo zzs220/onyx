@@ -9,9 +9,9 @@
   };
   programs.zen-browser.profiles.default.extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
     ublock-origin
-      sponsorblock
-      vimium-c
-      darkreader
+    sponsorblock
+    vimium-c
+    darkreader
   ];
   programs.zen-browser.profiles.default.settings = {
     browser = {

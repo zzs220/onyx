@@ -19,8 +19,7 @@
     # ./nvim.nix
     ../modules/home-manager/tr.nix
     ../modules/home-manager/utils.nix
-    ../modules/home-manager/spicetify.nix
-    ../modules/home-manager/zen-browser.nix
+    ../modules/home-manager/apps/default.nix
   ];
 
   nixpkgs = {
