@@ -32,6 +32,7 @@
     kdePackages.kde-gtk-config
     thunar xarchiver
   ];
+  services.tumbler.enable = true; # thumbnail
 
   programs.thunar = with pkgs; {
     enable = true;
