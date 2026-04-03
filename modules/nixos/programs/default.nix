@@ -15,6 +15,7 @@
 
     # Media
     mpv
+    ffmpeg
 
     # Browsers
     # firefox
