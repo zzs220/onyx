@@ -32,8 +32,6 @@
     ../modules/nixos/utils.nix
     ../modules/nixos/fonts.nix
     ../modules/nixos/programs/default.nix
-    ../modules/nixos/programs/games.nix
-    ../modules/nixos/programs/dev.nix
     ../modules/nixos/tlp.nix
     ../modules/nixos/fixes.nix
   ];

@@ -1,5 +1,9 @@
 { pkgs, ... }:
 {
+  imports = [
+    ./dev.nix
+    ./games.nix
+  ];
   environment.systemPackages = with pkgs; [
     # Terminal
     ghostty

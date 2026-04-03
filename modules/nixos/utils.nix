@@ -25,14 +25,6 @@
     };
   };
 
-  services.openssh = {
-    enable = true;
-    settings = {
-      PermitRootLogin = "no";
-      PasswordAuthentication = false;
-    };
-  };
-
   services = {
     upower.enable = true;
     udisks2.enable = true;
