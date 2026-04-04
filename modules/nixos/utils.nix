@@ -33,7 +33,9 @@
 
   environment.systemPackages = with pkgs; [
     home-manager
-      bash bash-completion zsh zsh-completions tmux wget curl git neovim btop eza bat fzf fd ripgrep jq
+      bash bash-completion zsh zsh-completions
+      tmux wget curl git neovim btop eza bat fzf fd ripgrep jq
+      rsync
       acpi zip unzip p7zip unrar
       btrfs-progs
       sqlite tree-sitter
