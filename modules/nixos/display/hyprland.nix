@@ -31,9 +31,10 @@
     wl-clipboard brightnessctl hyprpolkitagent
     kdePackages.kde-gtk-config
     thunar xarchiver
+    zathura
   ];
-  services.tumbler.enable = true; # thumbnail
 
+  services.tumbler.enable = true; # thumbnail
   programs.thunar = with pkgs; {
     enable = true;
     plugins =  with pkgs; [
