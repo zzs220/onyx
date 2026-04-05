@@ -2,25 +2,9 @@
 {
   imports = [
     ./dev.nix
+    ./terminal.nix
     ./games.nix
-  ];
-  environment.systemPackages = with pkgs; [
-    # Terminal
-    ghostty
-    kitty
-
-    # Tools
-    fastfetch
-    nix-search-cli
-
-    # Media
-    mpv
-    ffmpeg
-
-    # Browsers
-    # firefox
-
-    # AI
-    opencode
+    ./opencode.nix
+    ./media.nix
   ];
 }
