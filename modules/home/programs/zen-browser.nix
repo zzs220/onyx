@@ -12,7 +12,6 @@
     sponsorblock
     vimium-c
     darkreader
-    bypass-paywalls-clean
   ];
   programs.zen-browser.profiles.default.settings = {
     browser = {

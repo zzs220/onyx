@@ -8,7 +8,7 @@
   imports = [
     ../modules/home/tr.nix
     ../modules/home/utils.nix
-    ../modules/home/apps/default.nix
+    ../modules/home/programs/default.nix
   ];
 
   nixpkgs = {
