@@ -7,20 +7,10 @@
   pkgs,
   ...
 }: {
-  # You can import other NixOS modules here
   imports = [
-    # If you want to use modules your own flake exports (from modules/nixos):
-    # inputs.self.nixosModules.example
-
-    # Or modules from other flakes (such as nixos-hardware):
-    # inputs.hardware.nixosModules.common-cpu-amd
-    # inputs.hardware.nixosModules.common-ssd
-
-    # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     ../modules/nixos/user.nix
 
-    # Import display and login managers
     ../modules/nixos/display/default.nix
     ../modules/nixos/login/default.nix
 
