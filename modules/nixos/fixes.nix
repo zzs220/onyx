@@ -4,6 +4,13 @@
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc.lib
   ];
+  services = {
+    udev = {
+      packages = with pkgs; [
+        game-devices-udev-rules # fix game controller compat
+      ];
+    };
+  };
   # appimage
   programs.appimage.enable = true;
   programs.appimage.binfmt = true; # execution attempt of .appimage file will be forced to use appimage-run some appimage may not work

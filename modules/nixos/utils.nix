@@ -35,6 +35,7 @@
   environment.systemPackages = with pkgs; [
       home-manager
       bash bash-completion zsh zsh-completions
+      gcc
       git tmux btop jq
       wget curl rsync file
       acpi zip unzip p7zip unrar
