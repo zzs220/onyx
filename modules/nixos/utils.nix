@@ -21,6 +21,7 @@
       nrs = "sudo nixos-rebuild switch --flake /etc/nixos#onyx";
       hms = "home-manager switch --flake /etc/nixos#zrd@onyx ";
       ncc = "cp /etc/nixos/flake.lock ~/nixos/flake.lock && sudo rm -rf /etc/nixos/* && sudo cp -r ~/nixos/* /etc/nixos/ && sudo rm -rf /etc/nixos/.git";
+      nfu = "sudo nix flake update --flake /etc/nixos";
       nsc = "nix-search";
     };
   };
@@ -32,10 +33,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    home-manager
+      home-manager
       bash bash-completion zsh zsh-completions
-      tmux wget curl git neovim btop eza bat fzf fd ripgrep jq
-      rsync
+      git tmux btop jq
+      wget curl rsync file
       acpi zip unzip p7zip unrar
       btrfs-progs
       sqlite tree-sitter

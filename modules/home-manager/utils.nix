@@ -1,8 +1,10 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    stow
-    git lazygit
-    tealdeer
+    fastfetch
+    git lazygit stow
+    tmux neovim tealdeer bat jq
+    fzf fd ripgrep 
+    nix-search-cli
   ];
 }
