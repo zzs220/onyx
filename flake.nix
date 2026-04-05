@@ -63,6 +63,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           # > Our main nixos configuration file <
+          home-manager.nixosModules.home-manager
           ./nixos/configuration.nix
         ];
       };
