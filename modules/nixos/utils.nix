@@ -33,7 +33,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-      home-manager
       bash bash-completion zsh zsh-completions
       gcc
       git tmux btop jq
