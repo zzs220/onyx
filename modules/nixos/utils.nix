@@ -36,7 +36,7 @@
       bash bash-completion zsh zsh-completions
       gcc
       git tmux btop jq
-      wget curl rsync file
+      wget curl rsync file busybox
       acpi zip unzip p7zip unrar
       btrfs-progs
       sqlite tree-sitter
