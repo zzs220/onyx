@@ -1,5 +1,3 @@
-# This is your system's configuration file.
-# Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
 {
   inputs,
   lib,
@@ -9,26 +7,26 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ../modules/nixos/user.nix
+    ./user.nix
 
-    ../modules/nixos/display/default.nix
-    ../modules/nixos/login/default.nix
+    ../../modules/nixos/display/default.nix
+    ../../modules/nixos/login/default.nix
 
-    ../modules/nixos/network/default.nix
-    ../modules/nixos/boot/default.nix
-    ../modules/nixos/audio/default.nix
-    ../modules/nixos/hardware/default.nix
-    ../modules/nixos/keyd/default.nix
-    ../modules/nixos/utils.nix
-    ../modules/nixos/fonts.nix
-    ../modules/nixos/programs/default.nix
-    ../modules/nixos/tlp.nix
-    ../modules/nixos/fixes.nix
+    ../../modules/nixos/network/default.nix
+    ../../modules/nixos/boot/default.nix
+    ../../modules/nixos/audio/default.nix
+    ../../modules/nixos/hardware/default.nix
+    ../../modules/nixos/keyd/default.nix
+    ../../modules/nixos/utils.nix
+    ../../modules/nixos/fonts.nix
+    ../../modules/nixos/programs/default.nix
+    ../../modules/nixos/tlp.nix
+    ../../modules/nixos/fixes.nix
   ];
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
-    users.zrd = import ../home-manager/home.nix;
+    users.zrd = import ./home.nix;
   };
 
   nixpkgs = {

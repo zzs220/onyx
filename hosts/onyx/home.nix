@@ -6,9 +6,9 @@
   ...
 }: {
   imports = [
-    ../modules/home/tr.nix
-    ../modules/home/utils.nix
-    ../modules/home/programs/default.nix
+    ../../modules/home/tr.nix
+    ../../modules/home/utils.nix
+    ../../modules/home/programs/default.nix
   ];
 
   nixpkgs = {

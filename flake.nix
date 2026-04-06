@@ -56,29 +56,24 @@
 
     # Your custom packages and modifications, exported as overlays
     overlays = import ./overlays {inherit inputs;};
-    # NixOS configuration entrypoint
-    # Available through 'nixos-rebuild --flake .#onyx'
+
     nixosConfigurations = {
       onyx = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
-          # > Our main nixos configuration file <
           home-manager.nixosModules.home-manager
-          ./nixos/configuration.nix
+          ./hosts/onyx/configuration.nix
         ];
       };
     };
 
-    # Standalone home-manager configuration entrypoint
-    # Available through 'home-manager --flake .#zrd@onyx'
     homeConfigurations = {
       "zrd@onyx" = home-manager.lib.homeManagerConfiguration {
         # Home-manager requires 'pkgs' instance
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};
         modules = [
-          # > Our main home-manager configuration file <
-          ./home-manager/home.nix
+          ./hosts/onyx/home.nix
         ];
       };
     };
