@@ -4,7 +4,8 @@
     fastfetch
     git lazygit stow
     tmux neovim tealdeer bat jq
-    fzf fd ripgrep 
+    fzf fd ripgrep
     nix-search-cli
+    zoxide
   ];
 }

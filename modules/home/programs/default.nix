@@ -5,6 +5,8 @@
     ./terminal.nix
     ./dev.nix
     ./media.nix
+    ./llama-cpp-vulkan.nix
+    ./ai.nix
     ./games.nix
   ];
 }
