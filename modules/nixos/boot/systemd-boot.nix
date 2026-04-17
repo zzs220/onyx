@@ -1,9 +1,9 @@
 {
   boot.loader = {
-    systemd-boot.enable = lib.mkDefault true;
+    systemd-boot.enable =  true;
     efi = {
-      canTouchEfiVariables = lib.mkDefault true;
+      canTouchEfiVariables =  true;
       efiSysMountPoint = "/boot";
-    }
-  }
+    };
+  };
 }
