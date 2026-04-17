@@ -35,8 +35,9 @@
   environment.systemPackages = with pkgs; [
       bash bash-completion zsh zsh-completions
       gcc
-      git tmux btop jq
-      wget curl rsync file busybox
+      git tmux btop jq killall
+      wget curl rsync file
+      inetutils dnsutils net-tools
       acpi zip unzip p7zip unrar
       btrfs-progs
       sqlite tree-sitter
