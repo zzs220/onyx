@@ -21,7 +21,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/programs/default.nix
     ../../modules/nixos/tlp.nix
-    ../../modules/nixos/fixes.nix
+    ../../modules/nixos/fixes/default.nix
   ];
 
   home-manager = {
