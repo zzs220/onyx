@@ -10,14 +10,6 @@
     xwayland.enable = true;
   };
 
-  environment = {
-    sessionVariables = {
-      XDG_CURRENT_DESKTOP = "Hyprland";
-      XDG_SESSION_TYPE = "wayland";
-      QT_QPA_PLATFORMTHEME = "qt6ct";
-    };
-  };
-
   security.polkit.enable = true;
 
   xdg.portal = {
