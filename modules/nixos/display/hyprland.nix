@@ -20,7 +20,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    wl-clipboard brightnessctl hyprpolkitagent
+    wl-clipboard brightnessctl hyprpolkitagent hyprshutdown
     kdePackages.kde-gtk-config
     thunar xarchiver
     zathura
