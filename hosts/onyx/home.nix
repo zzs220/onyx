@@ -29,7 +29,11 @@
   };
 
   programs.home-manager.enable = true;
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    settings.user.name = "zzs220";
+    settings.user.email = "zzs220@localhost";
+  };
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
