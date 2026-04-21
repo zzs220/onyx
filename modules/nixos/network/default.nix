@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./ssh.nix
     ./tailscale.nix
     ./dnscrypt-proxy.nix
   ];
@@ -10,15 +11,6 @@
     enable = true;
     # dns = "systemd";
   };
-
-  services.openssh = {
-    enable = true;
-    settings = {
-      PermitRootLogin = "no";
-      PasswordAuthentication = false;
-    };
-  };
-
   environment.systemPackages = with pkgs; [
     wireguard-tools wgcf
   ];
