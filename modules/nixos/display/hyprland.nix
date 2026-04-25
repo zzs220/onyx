@@ -10,8 +10,6 @@
     xwayland.enable = true;
   };
 
-  security.polkit.enable = true;
-
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -20,13 +18,11 @@
   };
 
   environment.systemPackages = with pkgs; [
-    wl-clipboard brightnessctl hyprpolkitagent hyprshutdown
+    hyprpolkitagent hyprshutdown
     kdePackages.kde-gtk-config
-    thunar xarchiver
-    zathura
+    thunar thunar-archive-plugin
   ];
 
-  services.tumbler.enable = true; # thumbnail
   programs.thunar = with pkgs; {
     enable = true;
     plugins =  with pkgs; [
