@@ -4,6 +4,7 @@
     ./ssh.nix
     ./tailscale.nix
     ./dnscrypt-proxy.nix
+    ./avahi.nix
   ];
 
   networking.hostName = "onyx";
