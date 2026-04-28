@@ -17,4 +17,16 @@
     gnome-control-center
     nautilus
   ];
+
+  programs.dconf.enable = true;
+  programs.dconf.profiles.user.databases = [
+  {
+    lockAll = false;
+    settings = {
+      "org/gnome/mutter" = {
+        experimental-features = [ "scale-monitor-framebuffer" ];
+      };
+    };
+  }
+  ];
 }
