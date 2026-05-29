@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  services.fwupd.enable = true;
   hardware = {
     amdgpu = {
       opencl.enable = true;
@@ -12,6 +13,7 @@
       extraPackages = with pkgs; [
         libva-vdpau-driver
         libvdpau-va-gl
+        rocmPackages.rocm-smi
         # rocmPackages.clr.icd # AMD required pkg
       ];
     };
