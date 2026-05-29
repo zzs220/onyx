@@ -13,7 +13,7 @@ in {
   programs.spicetify = {
     enable = true;
     theme = lib.mkForce spicePkgs.themes.sleek;
-    colorScheme = "Greener";
+    colorScheme = "TokyoNight";
     enabledExtensions = with spicePkgs.extensions; [
       # adblockify
       # playlistIcons
