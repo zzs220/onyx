@@ -37,7 +37,7 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 
   home.activation.cloneDotfiles = lib.hm.dag.entryAfter ["writeBoundary"] ''
   set -x

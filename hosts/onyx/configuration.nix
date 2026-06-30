@@ -59,6 +59,6 @@
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 
 }
