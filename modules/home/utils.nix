@@ -7,5 +7,8 @@
     fzf fd ripgrep
     nix-search-cli
     zoxide
+    bluetui
+    s-tui
+    nix-tree
   ];
 }
