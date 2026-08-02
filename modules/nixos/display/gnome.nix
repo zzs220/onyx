@@ -13,7 +13,8 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
-    gnomeExtensions.dash-in-panel
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.notification-timeout
     gnome-control-center
     nautilus
   ];
