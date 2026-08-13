@@ -9,6 +9,7 @@ services.keyd = {
         main = {
           tab = "overload(l_tab, tab)"; # you might need to also enclose the key in quotes if it contains non-alphabetical symbols
           capslock = "overload(control, esc)"; # you might need to also enclose the key in quotes if it contains non-alphabetical symbols
+          esc = "overload(control, esc)"; # you might need to also enclose the key in quotes if it contains non-alphabetical symbols
         };
       };
       extraConfig = ''
