@@ -1,4 +1,9 @@
 {
+  imports = [
+    # ./callum-home-row.nix
+    ./home-row.nix
+  ];
+
 services.keyd = {
   enable = true;
   keyboards = {
@@ -19,9 +24,10 @@ services.keyd = {
         k = up
         l = right
         enter = backspace
+        [shift]
+        space = backspace
       '';
     };
   };
 };
 }
-
