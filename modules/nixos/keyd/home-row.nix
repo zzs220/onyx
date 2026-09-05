@@ -17,6 +17,9 @@ services.keyd = {
           k = "lettermod(meta, k,150, 200)";
           l = "lettermod(alt, l,150, 200)";
           # ";" = "lettermod(shift, ;,150, 200)";
+
+          leftshift = "oneshot(shift)";
+          rightshift = "oneshot(shift)";
         };
       };
       extraConfig = ''
@@ -33,6 +36,9 @@ services.keyd = {
         k = k
         l = l
         ; = ;
+
+        leftshift = leftshift
+        rightshift = rightshift
       '';
     };
   };
